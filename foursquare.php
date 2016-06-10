@@ -25,7 +25,7 @@ if(isset($_GET["code"])){
 
   $auth = json_decode($server_output, true);
   var_dump($auth);
-  // Now save the user_id in your database. Save the refresh token as well. For every query, now you need the access_token.
+  //For every query, now you need the access_token.
 }
 echo "<a href='https://foursquare.com/oauth2/authenticate?response_type=code&client_id=$client_id&redirect_uri=$redirect_uri'>
 Login with Foursquare
